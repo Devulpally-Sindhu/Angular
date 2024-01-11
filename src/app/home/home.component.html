@@ -1,0 +1,18 @@
+<div style="border: 2px solid yellow;padding: 10px;margin: 10px;">
+    <h1>Home Component</h1>
+    <button (click)="click()">Toggle</button>
+    <span>{{isClicked}}</span>
+    <h1 *ngIf="isClicked">Devulapally sindhu</h1>
+</div>
+
+<div style="border: 1px solid red;padding: 10px;margin:10px">
+    <ul>
+        <li *ngFor="let x of numbers">{{x}}</li>
+    </ul>
+</div>
+
+<div style="border: 1px solid darkcyan;padding: 10px;margin:10px">
+    <ol>
+        <li *ngFor="let x of students">{{x}}</li>
+    </ol>
+</div>
