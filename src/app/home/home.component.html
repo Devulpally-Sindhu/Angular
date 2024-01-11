@@ -1,0 +1,6 @@
+<div style="border: 2px solid navy;padding: 10px;margin: 10px;">
+    <h1>Home componenet</h1>
+    <input type="text" [(ngModel)]="taskName">
+    <button (click)="addTask()">Add Task</button>
+    <app-todolist *ngFor="let x of tasks;let i=index" [taskTitle]="x" [ind]="i" (delEvent)="deleteTask($event)"></app-todolist>
+</div>
